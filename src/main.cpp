@@ -4,9 +4,12 @@
 using namespace std;
 
 int main(int argc, char *argv[]){
-	cout << "hello world!" << endl;
 	initscr();
+	printw("hello world!");
 	refresh();
+	int key = getch();
+	printw("%d", key);
+	getch();
 	endwin();
 	return 0;
 }
